@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-12">
+            <div class="jumbotron">
+                <div id="survey">
+                    <h1>Best Friend Survey</h1>
+                    <h3></h3>
+                </div>
+                <div id="matchDisplay">
+                    <h2>Your match is!</h2>
+                    <h1 id="match"></h1>
+                    <div id="image"></div>
+                </div>
+                <hr>
+                <a href="/">
+                    <button class="btn btn-info btn-lg">
+                        <span class="fa fa-th-list"></span> Home</button>
+                </a>
+                <div class="row"></div>
+                <hr>
+                <div id="allQuestions">
+                    <p>Please enter your Name.</p>
+                    <div class="input-group mb-3">
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Your Name here</span>
+                        </div>
+                        <input type="text" id="name" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <hr>
+
+                    <label for="basic-url">
+                        <p>Provide a Link to your Photo</p>
+                    </label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">https://linktophoto.com/</span>
+                        </div>
+                        <input type="text" class="form-control" id="photo" aria-describedby="basic-addon3">
+                    </div>
+                    <hr>
+
+                    <p>Please enter a number between 5 and 1.
+                        <br>
+                        5 being Absolutely and 1 Being Not at All.</p>
+                    <hr>
+                    <p>Question one: Do you like to travel?</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question1" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Two: Do you like Video Games?</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question2" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Three: Do you believe in Santa?</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question3" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Four: Do you like coding UI/UX?</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question4" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Five: Do you like coding the Back-end?</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question5" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Six: Do you like coding Bootcamps?</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question6" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Seven: Ronald McDonald is your personal hero?</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question7" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Eight: Sleep is overated.</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question8" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Nine: A sword is an sound fashion choice.</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question9" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <p>Question Ten: Your favorite Planet is Melmac.</p>
+                    <div class="input-group">
+                        <select class="custom-select" id="question10" aria-label="Example select with button addon">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <button id="submit" type="submit" class="btn btn-info btn-lg">
+                        <span class="fa fa-th-list"></span> SURVEY SAYS!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#matchDisplay").hide();
+            console.log("ready");
+        });
+
+        $("#submit").click(function (event) {
+            event.preventDefault();
+
+
+            if ($("#name").val() !== "" && $("#photo").val() !== "") {
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        parseInt($("#question1").val()),
+                        parseInt($("#question2").val()),
+                        parseInt($("#question3").val()),
+                        parseInt($("#question4").val()),
+                        parseInt($("#question5").val()),
+                        parseInt($("#question6").val()),
+                        parseInt($("#question7").val()),
+                        parseInt($("#question8").val()),
+                        parseInt($("#question9").val()),
+                        parseInt($("#question10").val()),
+                    ]
+                };
+            } else if ($("#name").val() === "") {
+                return alert("Enter your Name.");
+            } else {
+                return alert("Enter your Name.");
+            }
+
+            console.log(JSON.stringify(newFriend) + " HTML");
+
+
+            var currentURL = window.location.origin;
+
+            //takes the res object and displays on the DOM
+            $.post("/api/friends", newFriend).done(function (data) {
+                console.log(data.matchName + "\n" + data.matchPhoto);
+                var matchImg = $("<img>");
+                matchImg.attr("src", data.matchPhoto);
+                $("#match").html(data.matchName);
+                $("#image").append(matchImg);
+            })
+
+
+            $("#allQuestions").hide();
+            $("#survey").hide();
+            $("#matchDisplay").show();
+
+            //reset
+            $("#name").val("");
+            $("#photo").val("");
+            $("#question1").val(1);
+            $("#question2").val(1);
+            $("#question3").val(1);
+            $("#question4").val(1);
+            $("#question5").val(1);
+            $("#question6").val(1);
+            $("#question7").val(1);
+            $("#question8").val(1);
+            $("#question9").val(1);
+            $("#question10").val(1);
+
+        });
+    </script>
+
+</body>
